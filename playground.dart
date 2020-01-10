@@ -329,11 +329,15 @@ void main() {
   // forEach loop
   var numbers = [1,2,3];
 
-  // Cannot do numbers.forEach(n => print(n)); so stupid.
-  numbers.forEach((n) => print(n));
+//  // Cannot do numbers.forEach(n => print(n)); so stupid.
+//  numbers.forEach((n) => print(n));
 
+  numbers.forEach(printNum);
 }
 
+void printNum(num) {
+  print(num);
+}
 
 
 
