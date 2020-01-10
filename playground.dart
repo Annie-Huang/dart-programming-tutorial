@@ -113,20 +113,31 @@ multiple line of comment
 
 // ======================================================
 
+//main() {
+//  var s1 = '''
+//  You can create
+//  multi-line strings like this one.
+//  ''';
+//
+//  var s2 = """This is also a
+//  multi-line string.""";
+//
+//  print(s1);
+//  print(s2);
+//}
+
+// ======================================================
+
 main() {
-  var s1 = '''
-  You can create
-  multi-line strings like this one.
-  ''';
+  // String -> int
+  var one = int.parse('1');
+  var one1 = int.parse('str');
+  assert(one == 1);
 
-  var s2 = """This is also a 
-  multi-line string.""";
-
-  print(s1);
-  print(s2);
+  // String -> double
+  var onePointOne = double.parse('1.1');
+  assert(onePointOne == 1.1);
 }
-
-
 
 
 
