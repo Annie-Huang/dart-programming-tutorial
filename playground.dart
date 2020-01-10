@@ -316,15 +316,22 @@ void main() {
 //    print(i);
 //  }
 
-  // for-in loop
-  var numbers = [1,2,3];
-  for (var n in numbers) {
-    print(n);
-  }
+//  // for-in loop
+//  var numbers = [1,2,3];
+//  for (var n in numbers) {
+//    print(n);
+//  }
+//
+//  for (var i=0; i<numbers.length; ++i) {
+//    print(numbers[i]);
+//  }
 
-  for (var i=0; i<numbers.length; ++i) {
-    print(numbers[i]);
-  }
+  // forEach loop
+  var numbers = [1,2,3];
+
+  // Cannot do numbers.forEach(n => print(n)); so stupid.
+  numbers.forEach((n) => print(n));
+
 }
 
 
