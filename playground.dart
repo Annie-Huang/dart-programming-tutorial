@@ -411,27 +411,54 @@ multiple line of comment
 
 // ======================================================
 
+//void main() {
+//  // Set
+//  var halogens = {'fluorine', 'chlorine', 'fluorine'};
+//
+//  for(var x in halogens) {
+//    print(x);
+//  }
+//  print(halogens.runtimeType);
+//
+//  var halogens1 = {};
+//  print(halogens1.runtimeType);
+//
+//  var halogens2 = <String>{};
+//  print(halogens2.runtimeType);
+//
+//  Set <String> names = {};
+//  print(names.runtimeType);
+//}
+
+// ======================================================
+
 void main() {
-  // Set
-  var halogens = {'fluorine', 'chlorine', 'fluorine'};
+  // Map
+  var gifts = {
+    // Key:   Value
+    'first': 'partridge',
+    'second': 'turtledoves',
+    'fifth': 'golden rings'
+  };
 
-  for(var x in halogens) {
-    print(x);
-  }
-  print(halogens.runtimeType);
+  print(gifts['fifth']);
 
-  var halogens1 = {};
-  print(halogens1.runtimeType);
+  var gifts2 = {
+    // Key:   Value
+    2: 'partridge',
+    1: 'turtledoves',
+    3: 'golden rings'
+  };
+  print(gifts2[1]);
 
-  var halogens2 = <String>{};
-  print(halogens2.runtimeType);
+  var gifts3 = Map();
+  gifts3['first'] = 'Mango';
+  print(gifts3['first']);
 
-  Set <String> names = {};
-  print(names.runtimeType);
+  var gifts4 = {'first': 'Mango', 'second': 'Jack Fruit'};
+  print(gifts4['second']);
+
 }
-
-
-
 
 
 
