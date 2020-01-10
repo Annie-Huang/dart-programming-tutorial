@@ -260,19 +260,34 @@ multiple line of comment
 
 // ======================================================
 
-// Type test
+//// Type test
+//
+//void main() {
+////  var x = 100;
+//  var x = 100.00;
+//
+//  if (x is int) {
+//    print('integer');
+//  }
+//}
+
+// ======================================================
+
+// Conditional Statement
 
 void main() {
-//  var x = 100;
-  var x = 100.00;
+  int number = 101;
 
-  if (x is int) {
-    print('integer');
+  if (number %2 == 0) {
+    print('Even');
+  }
+  else if (number % 3 == 0) {
+    print('Odd');
+  }
+  else {
+    print('Confused');
   }
 }
-
-
-
 
 
 
