@@ -234,7 +234,11 @@ main() {
 //    number = n.num;
 //  }
 
-  number = n?.num;
+//  // n?.num	>>> If n != null, get n.num
+//  number = n?.num;
+
+  // n?.num ?? 0	>>> If n == null, return 0, otherwise get n.num
+  number = n?.num ?? 0;
 
   print(number);
 }
