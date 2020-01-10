@@ -1,0 +1,13 @@
+https://www.youtube.com/watch?v=Ej_Pcr4uC2Q&t=3s
+https://github.com/Annie-Huang/dart-programming-tutorial
+
+
+https://dart.dev/
+https://dart.dev/get-dart
+https://gekorm.com/dart-windows/
+https://dartpad.dartlang.org/
+=================================================
+
+C:\react\dart-programming-tutorial>dart playground.dart
+
+
