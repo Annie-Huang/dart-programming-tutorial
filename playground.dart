@@ -498,29 +498,30 @@ multiple line of comment
 
 // ======================================================
 
-void main() {
-  print(sum(2,2));
-  print(sum2(num2: 4, num1: 2));
-  print(sum3(10, num2: 2));
+//void main() {
+//  print(sum(2,2));
+//  print(sum2(num2: 4, num1: 2));
+//  print(sum3(10, num2: 2));
+//
+//  // name parameter by default is optional.
+//  print(sum3(10));
+//
+//  // How to make positional parameter optional, see below implementation.
+//  print(sum4(10));
+//}
+//
+//dynamic sum(var num1, var num2) => num1 + num2;
+//dynamic sum2({var num1, var num2}) => num1 + num2;
+//
+////dynamic sum3(var num1, {var num2}) => num1 + num2;
+//
+////dynamic sum3(var num1, {var num2}) => num1 + (num2 ?? 0);
+//dynamic sum3(var num1, {var num2=0}) => num1 + num2; // This is the same as above
+//
+//// Make a positional parameter optional
+//dynamic sum4(var num1, [var num2]) => num1 + (num2 ?? 0);
 
-  // name parameter by default is optional.
-  print(sum3(10));
-
-  // How to make positional parameter optional, see below implementation.
-  print(sum4(10));
-}
-
-dynamic sum(var num1, var num2) => num1 + num2;
-dynamic sum2({var num1, var num2}) => num1 + num2;
-
-//dynamic sum3(var num1, {var num2}) => num1 + num2;
-
-//dynamic sum3(var num1, {var num2}) => num1 + (num2 ?? 0);
-dynamic sum3(var num1, {var num2=0}) => num1 + num2; // This is the same as above
-
-// Make a positional parameter optional
-dynamic sum4(var num1, [var num2]) => num1 + (num2 ?? 0);
-
+// ======================================================
 
 
 
