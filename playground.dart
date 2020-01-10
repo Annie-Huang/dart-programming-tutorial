@@ -369,12 +369,56 @@ multiple line of comment
 
 // ======================================================
 
+//void main() {
+//  for (var i = 0; i < 10; ++i) {
+//    if (i % 2 == 0) continue;
+//    print('Odd: $i');
+//  }
+//}
+
+// ======================================================
+
+// Collection
+
 void main() {
-  for (var i = 0; i < 10; ++i) {
-    if (i % 2 == 0) continue;
-    print('Odd: $i');
+  // List
+//  List names = ['Jack', 'Jill'];
+//  var names = ['Jack', 'Jill', 10, 100.1];
+//  List <String> names = ['Jack', 'Jill'];
+  List <String> names = const ['Jack', 'Jill'];
+  print(names[0]);
+  print(names[1]);
+  print(names.length);
+
+//  names[1] = 'Mark';
+
+  for (var n in names) {
+    print(n);
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
