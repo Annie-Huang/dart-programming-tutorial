@@ -384,8 +384,8 @@ void main() {
   // List
 //  List names = ['Jack', 'Jill'];
 //  var names = ['Jack', 'Jill', 10, 100.1];
-//  List <String> names = ['Jack', 'Jill'];
-  List <String> names = const ['Jack', 'Jill'];
+  List <String> names = ['Jack', 'Jill'];
+//  List <String> names = const ['Jack', 'Jill'];
   print(names[0]);
   print(names[1]);
   print(names.length);
@@ -393,6 +393,18 @@ void main() {
 //  names[1] = 'Mark';
 
   for (var n in names) {
+    print(n);
+  }
+
+  var names2 = names;
+  names[1] = 'Mark';
+  for (var n in names2) {
+    print(n);
+  }
+
+  var names3 = [...names];
+  names[1] = 'Mark1';
+  for (var n in names3) {
     print(n);
   }
 }
