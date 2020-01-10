@@ -84,6 +84,7 @@ multiple line of comment
 //}
 
 // ======================================================
+// String
 
 //main() {
 //  var s1 = 'Single quotes work well for string literals.';
@@ -104,15 +105,26 @@ multiple line of comment
 
 // ======================================================
 
-// String
+//main() {
+//  var age = 35;
+//  var str = 'My age is: $age';
+//  print(str);
+//}
+
+// ======================================================
 
 main() {
-  var age = 35;
-  var str = 'My age is: $age';
-  print(str);
+  var s1 = '''
+  You can create
+  multi-line strings like this one.
+  ''';
+
+  var s2 = """This is also a 
+  multi-line string.""";
+
+  print(s1);
+  print(s2);
 }
-
-
 
 
 
