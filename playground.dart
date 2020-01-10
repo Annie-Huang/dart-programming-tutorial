@@ -308,38 +308,48 @@ multiple line of comment
 
 // ======================================================
 
-// Loop
+//// Loop
+//
+//void main() {
+////  // Standard for loop
+////  for( var i=1; i<=10; ++i) {
+////    print(i);
+////  }
+//
+////  // for-in loop
+////  var numbers = [1,2,3];
+////  for (var n in numbers) {
+////    print(n);
+////  }
+////
+////  for (var i=0; i<numbers.length; ++i) {
+////    print(numbers[i]);
+////  }
+//
+////  // forEach loop
+////  var numbers = [1,2,3];
+////
+//////  // Cannot do numbers.forEach(n => print(n)); so stupid.
+//////  numbers.forEach((n) => print(n));
+////
+////  numbers.forEach(printNum);
+//}
+//
+//void printNum(num) {
+//  print(num);
+//}
+
+// ======================================================
 
 void main() {
-//  // Standard for loop
-//  for( var i=1; i<=10; ++i) {
-//    print(i);
-//  }
+  // while loop
+  int num = 5;
 
-//  // for-in loop
-//  var numbers = [1,2,3];
-//  for (var n in numbers) {
-//    print(n);
-//  }
-//
-//  for (var i=0; i<numbers.length; ++i) {
-//    print(numbers[i]);
-//  }
-
-  // forEach loop
-  var numbers = [1,2,3];
-
-//  // Cannot do numbers.forEach(n => print(n)); so stupid.
-//  numbers.forEach((n) => print(n));
-
-  numbers.forEach(printNum);
+  while (num > 0) {
+    print(num);
+    num -=1;
+  }
 }
-
-void printNum(num) {
-  print(num);
-}
-
-
 
 
 
