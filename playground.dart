@@ -431,36 +431,53 @@ multiple line of comment
 //}
 
 // ======================================================
+//
+//void main() {
+//  // Map
+//  var gifts = {
+//    // Key:   Value
+//    'first': 'partridge',
+//    'second': 'turtledoves',
+//    'fifth': 'golden rings'
+//  };
+//
+//  print(gifts['fifth']);
+//
+//  var gifts2 = {
+//    // Key:   Value
+//    2: 'partridge',
+//    1: 'turtledoves',
+//    3: 'golden rings'
+//  };
+//  print(gifts2[1]);
+//
+//  var gifts3 = Map();
+//  gifts3['first'] = 'Mango';
+//  print(gifts3['first']);
+//
+//  var gifts4 = {'first': 'Mango', 'second': 'Jack Fruit'};
+//  print(gifts4['second']);
+//
+//}
 
+// ======================================================
+
+// Function
 void main() {
-  // Map
-  var gifts = {
-    // Key:   Value
-    'first': 'partridge',
-    'second': 'turtledoves',
-    'fifth': 'golden rings'
-  };
+  showOutput(square(2));
+  showOutput(square(2.5));
 
-  print(gifts['fifth']);
-
-  var gifts2 = {
-    // Key:   Value
-    2: 'partridge',
-    1: 'turtledoves',
-    3: 'golden rings'
-  };
-  print(gifts2[1]);
-
-  var gifts3 = Map();
-  gifts3['first'] = 'Mango';
-  print(gifts3['first']);
-
-  var gifts4 = {'first': 'Mango', 'second': 'Jack Fruit'};
-  print(gifts4['second']);
-
+  print(square.runtimeType);
 }
 
+// dynamic means it can return any type.
+dynamic square(var num) {
+  return num * num;
+}
 
+void showOutput(var msg) {
+  print(msg);
+}
 
 
 
