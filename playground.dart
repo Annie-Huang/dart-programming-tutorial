@@ -217,39 +217,46 @@ multiple line of comment
 
 // ======================================================
 
-// Null Aware Operator
-// (?.), (??), (??=)
-
-class Num {
-  int num = 10;
-}
-
-main() {
-//  var n = Num();
-  var n;
-  int number;
-
-  // You should always check whether it's not equal to null
-//  if ( n != null) {
-//    number = n.num;
-//  }
-
-//  // n?.num	>>> If n != null, get n.num
-//  number = n?.num;
-
-//  // n?.num ?? 0	>>> If n == null, return 0, otherwise get n.num
-//  number = n?.num ?? 0;
-
+//// Null Aware Operator
+//// (?.), (??), (??=)
+//
+//class Num {
+//  int num = 10;
+//}
+//
+//main() {
+////  var n = Num();
+//  var n;
+//  int number;
+//
+//  // You should always check whether it's not equal to null
+////  if ( n != null) {
+////    number = n.num;
+////  }
+//
+////  // n?.num	>>> If n != null, get n.num
+////  number = n?.num;
+//
+////  // n?.num ?? 0	>>> If n == null, return 0, otherwise get n.num
+////  number = n?.num ?? 0;
+//
+////  print(number);
+//
+//  // Short cut for above:
+//  // number ??= 100	>>> If number == null, assign number to 100, otherwise do nothing
+//  print(number ??= 100);
 //  print(number);
+//}
 
-  // Short cut for above:
-  // number ??= 100	>>> If number == null, assign number to 100, otherwise do nothing
-  print(number ??= 100);
-  print(number);
+// ======================================================
+
+// Ternary operator
+
+void main() {
+  int x = 101;
+  var result = x % 2 == 0 ? 'Even' : 'Odd';
+  print(result);
 }
-
-
-
 
 
 
