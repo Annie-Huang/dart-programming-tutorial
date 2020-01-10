@@ -237,9 +237,14 @@ main() {
 //  // n?.num	>>> If n != null, get n.num
 //  number = n?.num;
 
-  // n?.num ?? 0	>>> If n == null, return 0, otherwise get n.num
-  number = n?.num ?? 0;
+//  // n?.num ?? 0	>>> If n == null, return 0, otherwise get n.num
+//  number = n?.num ?? 0;
 
+//  print(number);
+
+  // Short cut for above:
+  // number ??= 100	>>> If number == null, assign number to 100, otherwise do nothing
+  print(number ??= 100);
   print(number);
 }
 
