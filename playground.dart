@@ -462,27 +462,39 @@ multiple line of comment
 
 // ======================================================
 
-// Function
-void main() {
-  // Arrow Function =>
-  showOutput(square(2));
-  showOutput(square(2.5));
-
-  print(square.runtimeType);
-}
-
-//// dynamic means it can return any type.
-//dynamic square(var num) {
-//  return num * num;
+//// Function
+//void main() {
+//  // Arrow Function =>
+//  showOutput(square(2));
+//  showOutput(square(2.5));
+//
+//  print(square.runtimeType);
 //}
-dynamic square(var num) => num * num;
+//
+////// dynamic means it can return any type.
+////dynamic square(var num) {
+////  return num * num;
+////}
+//dynamic square(var num) => num * num;
+//
+//void showOutput(var msg) {
+//  print(msg);
+//}
 
-void showOutput(var msg) {
-  print(msg);
+// ======================================================
+
+main() {
+  var list = ['apples', 'bananas', 'oranges'];
+  list.forEach(printF);
+
+  list.forEach((item) {
+    print(item);
+  });
 }
 
-
-
+void printF(item) {
+  print(item);
+}
 
 
 
