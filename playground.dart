@@ -341,23 +341,31 @@ multiple line of comment
 
 // ======================================================
 
-void main() {
-  // while loop
-  int num = 5;
-
-//  while (num > 0) {
+//void main() {
+//  // while loop
+//  int num = 5;
+//
+////  while (num > 0) {
+////    print(num);
+////    num -=1;
+////  }
+//
+//  do {
 //    print(num);
 //    num -=1;
-//  }
+//  } while (num > 0);
+//}
 
-  do {
-    print(num);
-    num -=1;
-  } while (num > 0);
+// ======================================================
+
+// break and continue
+
+void main() {
+  for( var i = 0; i < 10; ++i) {
+    if (i > 5) break;
+    print(i);
+  }
 }
-
-
-
 
 
 
