@@ -378,38 +378,57 @@ multiple line of comment
 
 // ======================================================
 
-// Collection
+//// Collection
+//
+//void main() {
+//  // List
+////  List names = ['Jack', 'Jill'];
+////  var names = ['Jack', 'Jill', 10, 100.1];
+//  List <String> names = ['Jack', 'Jill'];
+////  List <String> names = const ['Jack', 'Jill'];
+//  print(names[0]);
+//  print(names[1]);
+//  print(names.length);
+//
+////  names[1] = 'Mark';
+//
+//  for (var n in names) {
+//    print(n);
+//  }
+//
+//  var names2 = names;
+//  names[1] = 'Mark';
+//  for (var n in names2) {
+//    print(n);
+//  }
+//
+//  var names3 = [...names];
+//  names[1] = 'Mark1';
+//  for (var n in names3) {
+//    print(n);
+//  }
+//}
+
+// ======================================================
 
 void main() {
-  // List
-//  List names = ['Jack', 'Jill'];
-//  var names = ['Jack', 'Jill', 10, 100.1];
-  List <String> names = ['Jack', 'Jill'];
-//  List <String> names = const ['Jack', 'Jill'];
-  print(names[0]);
-  print(names[1]);
-  print(names.length);
+  // Set
+  var halogens = {'fluorine', 'chlorine', 'fluorine'};
 
-//  names[1] = 'Mark';
-
-  for (var n in names) {
-    print(n);
+  for(var x in halogens) {
+    print(x);
   }
+  print(halogens.runtimeType);
 
-  var names2 = names;
-  names[1] = 'Mark';
-  for (var n in names2) {
-    print(n);
-  }
+  var halogens1 = {};
+  print(halogens1.runtimeType);
 
-  var names3 = [...names];
-  names[1] = 'Mark1';
-  for (var n in names3) {
-    print(n);
-  }
+  var halogens2 = <String>{};
+  print(halogens2.runtimeType);
+
+  Set <String> names = {};
+  print(names.runtimeType);
 }
-
-
 
 
 
