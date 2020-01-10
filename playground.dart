@@ -498,7 +498,13 @@ multiple line of comment
 
 // ======================================================
 
+void main() {
+  print(sum(2,2));
+  print(sum2(num2: 4, num1: 2));
+}
 
+dynamic sum(var num1, var num2) => num1 + num2;
+dynamic sum2({var num1, var num2}) => num1 + num2;
 
 
 
