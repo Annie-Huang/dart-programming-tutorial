@@ -250,13 +250,41 @@ multiple line of comment
 
 // ======================================================
 
-// Ternary operator
+//// Ternary operator
+//
+//void main() {
+//  int x = 101;
+//  var result = x % 2 == 0 ? 'Even' : 'Odd';
+//  print(result);
+//}
+
+// ======================================================
+
+// Type test
 
 void main() {
-  int x = 101;
-  var result = x % 2 == 0 ? 'Even' : 'Odd';
-  print(result);
+//  var x = 100;
+  var x = 100.00;
+
+  if (x is int) {
+    print('integer');
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
