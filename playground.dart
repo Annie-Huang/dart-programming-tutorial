@@ -590,17 +590,18 @@ multiple line of comment
 
 // ======================================================
 
-main() {
-  final name = 'Mahmud';
-  const age = 30;
+//main() {
+//  final name = 'Mahmud';
+//  const age = 30;
+//
+//  print(name);
+//  print(age);
+//
+//  name = '';
+//  age = 0;
+//}
 
-  print(name);
-  print(age);
-
-  name = '';
-  age = 0;
-}
-
+// ======================================================
 
 
 
