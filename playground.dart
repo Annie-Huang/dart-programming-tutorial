@@ -2,6 +2,8 @@
 //import 'dart:core';
 import 'dart:io';
 
+import 'dart:mirrors';
+
 //main() {
 //  print('hello world');
 //}
@@ -523,6 +525,30 @@ multiple line of comment
 
 // ======================================================
 
+// Class
+
+class Person {
+  String name;
+  int age;
+
+  Person(String name, [int age=18]) {
+    this.name = name;
+    this.age = age;
+  }
+
+  void showOutput() {
+    print(name);
+    print(age);
+  }
+}
+
+void main() {
+  Person person1 = Person('Mahmud', 35);
+
+//  person1.name = 'Mahmud';
+//  person1.age = 35;
+  person1.showOutput();
+}
 
 
 
