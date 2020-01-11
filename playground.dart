@@ -531,10 +531,11 @@ class Person {
   String name;
   int age;
 
-  Person(String name, [int age=18]) {
-    this.name = name;
-    this.age = age;
-  }
+//  Person(String name, [int age=18]) {
+//    this.name = name;
+//    this.age = age;
+//  }
+  Person(this.name, [this.age = 18]);
 
   void showOutput() {
     print(name);
@@ -543,7 +544,8 @@ class Person {
 }
 
 void main() {
-  Person person1 = Person('Mahmud', 35);
+  Person person1 = Person('Mahmud');
+//  Person person1 = Person('Mahmud', 35);
 
 //  person1.name = 'Mahmud';
 //  person1.age = 35;
