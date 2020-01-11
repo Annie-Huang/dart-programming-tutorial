@@ -636,39 +636,40 @@ multiple line of comment
 
 // ======================================================
 
-class X {
-  String name;
+//class X {
+//  String name;
+//
+//  X(this.name);
+//
+//  void showOutput() {
+//    print(this.name);
+//  }
+//
+//  dynamic square(dynamic val) {
+//    return val * val;
+//  }
+//}
+//
+//class Y extends X {
+//  Y(String name) : super(name);
+//
+//  // You use @override when you don't have control on the super class method implementation
+//  // This is a percaution to the compiler.
+//  @override
+//  void showOutput() {
+//    print(this.name);
+//    print('Hello');
+//  }
+//
+//  // Not using @override at this time
+//  dynamic square(dynamic val) {
+//    super.square(val);
+//  }
+//}
+//
+//// This section doesn't have the full display of the entire code snippy during the video.dynamic
 
-  X(this.name);
-
-  void showOutput() {
-    print(this.name);
-  }
-
-  dynamic square(dynamic val) {
-    return val * val;
-  }
-}
-
-class Y extends X {
-  Y(String name) : super(name);
-
-  // You use @override when you don't have control on the super class method implementation
-  // This is a percaution to the compiler.
-  @override
-  void showOutput() {
-    print(this.name);
-    print('Hello');
-  }
-
-  // Not using @override at this time
-  dynamic square(dynamic val) {
-    super.square(val);
-  }
-}
-
-// This section doesn't have the full display of the entire code snippy during the video.dynamic
-
+// ======================================================
 
 
 
